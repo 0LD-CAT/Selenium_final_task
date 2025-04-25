@@ -36,7 +36,7 @@ def browser(request):
     else:
         raise pytest.UsageError("--browser_name should be chrome or firefox")
 
-    browser.implicitly_wait(5)
+    browser.implicitly_wait(2)
     yield browser
 
     print("\nClosing browser...")
